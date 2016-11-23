@@ -1,0 +1,29 @@
+{
+  "name": "codeipsum",
+  "version": "1.0.0",
+  "description": "Ipsum for code",
+  "author": "Mike Seaby <mike@pixelspring.co.uk>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixelspring/codeipsum"
+  },
+  "license": "MIT",
+  "keywords": [
+    "lorem",
+    "ipsum",
+    "loremipsum"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-filesize": "0.0.6",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-size": "^2.1.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

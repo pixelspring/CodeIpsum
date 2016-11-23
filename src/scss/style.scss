@@ -1,0 +1,234 @@
+// Style.SCSS
+
+// Vars:
+$primary-color:     #2980b9;
+$success-color:     #2ecc71;
+$dark-color:        #292E33;
+
+@import "sanitize.scss";
+
+// Basics: 
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $success-color;
+        text-decoration: underline;
+    }
+}
+
+/* Header */
+header,
+footer {
+    background: $dark-color;
+    color: #eee;
+    padding: 16px;
+}
+
+header h1 {
+    color: white;
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.copied-notification {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    padding: 12px;
+    text-align: center;
+    background: $success-color;
+    color: white;
+
+    transition: opacity 0.3s ease-out;
+    opacity: 0; 
+    height: 0;
+    overflow: hidden;
+}
+
+.notification-active {
+    opacity: 1;
+    height: auto;
+}
+
+button {
+    background: $primary-color;
+    color: white;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 0 none;
+    border-radius: 3px;
+    float: right;
+
+    &:hover {
+        background: #2c3e50;
+    }
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+    width: 33.333333%;
+    float: left;
+    padding: 10px 20px 10px;
+}
+
+.col:last-of-type {
+    padding-right: 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    height: 150px;
+    overflow: auto;
+}
+
+
+::-moz-selection {
+    background-color: $success-color;
+    color: white;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: $success-color;
+    color: white;
+    text-shadow: none;
+}
+
+/*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
+.prettyprint {
+  background: #2d2d2d;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  border: 0 !important;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.pln {
+  color: #cccccc;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #999999;
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  padding-left: 1em;
+  background-color: #2d2d2d;
+  list-style-type: decimal;
+}
+
+@media screen {
+
+  /* string content */
+
+  .str {
+    color: #99cc99;
+  }
+
+  /* keyword */
+
+  .kwd {
+    color: #cc99cc;
+  }
+
+  /* comment */
+
+  .com {
+    color: #999999;
+  }
+
+  /* type name */
+
+  .typ {
+    color: #6699cc;
+  }
+
+  /* literal value */
+
+  .lit {
+    color: #f99157;
+  }
+
+  /* punctuation */
+
+  .pun {
+    color: #cccccc;
+  }
+
+  /* lisp open bracket */
+
+  .opn {
+    color: #cccccc;
+  }
+
+  /* lisp close bracket */
+
+  .clo {
+    color: #cccccc;
+  }
+
+  /* markup tag name */
+
+  .tag {
+    color: #f2777a;
+  }
+
+  /* markup attribute name */
+
+  .atn {
+    color: #f99157;
+  }
+
+  /* markup attribute value */
+
+  .atv {
+    color: #66cccc;
+  }
+
+  /* declaration */
+
+  .dec {
+    color: #f99157;
+  }
+
+  /* variable name */
+
+  .var {
+    color: #f2777a;
+  }
+
+  /* function name */
+
+  .fun {
+    color: #6699cc;
+  }
+}
