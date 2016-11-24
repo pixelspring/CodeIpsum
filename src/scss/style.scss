@@ -7,6 +7,11 @@ $dark-color:        #292E33;
 
 @import "sanitize.scss";
 
+body {
+    background: #333;
+    color: #eee;
+}
+
 // Basics: 
 
 a {
@@ -34,6 +39,8 @@ header h1 {
 
 h2 {
     font-size: 20px;
+    font-weight: 200;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .copied-notification {
@@ -85,7 +92,7 @@ button {
 .col {
     width: 33.333333%;
     float: left;
-    padding: 10px 20px 10px;
+    padding: 10px 20px 30px;
 }
 
 .col:last-of-type {
@@ -96,6 +103,7 @@ pre {
     white-space: pre-wrap;
     height: 150px;
     overflow: auto;
+    border-radius: 5px;
 }
 
 
@@ -231,4 +239,24 @@ li.L9 {
   .fun {
     color: #6699cc;
   }
+}
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #222;
+}
+
+::-webkit-scrollbar-track {
+    background: #444;
+}
+
+body {
+    scrollbar-face-color: #222;
+    scrollbar-track-color: #444;
 }
